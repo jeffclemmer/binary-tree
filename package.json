@@ -1,0 +1,14 @@
+{
+  "name": "binarytree",
+  "version": "0.0.1",
+  "description": "a simple binary tree class written for the fun of it",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "jeff clemmer <clemmer.jeff@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
