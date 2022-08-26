@@ -111,5 +111,5 @@ There are many different styles of traversal.  This library only implements one 
 
 ## Things I'd Like To Pursue
 
-I'd like to add tree size, a delete that will remove all values found, inserting smaller to bigger values left to right (ordering), tree flattening and ordering, and more tests.
+I'd like to add tree size (done), a delete that will remove all values found, inserting smaller to bigger values left to right (ordering), tree flattening and ordering, and more tests.
 
