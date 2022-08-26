@@ -273,3 +273,23 @@ test("invert/mirror tree complex", () => {
     }
   });
 });
+
+/* 
+counts totalNodes and leafNodes
+          1
+         / \
+       /    \
+     /       \
+   9         22
+    \       /  \
+     9     6    2
+      \   / \
+       5 11  5
+
+*/
+
+test("tree metrics", () => {
+  let bt = new BinaryTree(tree);
+  let metrics = bt.metrics();
+  expect(metrics).toEqual( { leafNodes: 4, totalNodes: 9 } );
+});

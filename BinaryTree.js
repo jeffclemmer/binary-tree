@@ -160,7 +160,7 @@ class BinaryTree {
     let queue = [this.#tree];
     
     while (queue.length > 0) {
-      // pop a node from the queue
+      // shift a node from the queue
       let node = queue.shift();
       
       // swap the nodes
@@ -177,6 +177,35 @@ class BinaryTree {
       
     }
     
+  }
+  
+  
+  // decends through the tree and counts all nodes and leaf nodes
+  metrics() {
+    let queue = [this.#tree];
+    
+    let totalNodes = 0;
+    let leafNodes = 0;
+    
+    while (queue.length > 0) {
+      // shift a node from the queue
+      let node = queue.shift();
+      
+      totalNodes++;
+      
+      if (node.l == null && node.r == null) {
+        leafNodes++;
+      }
+      
+      if (node.l != null) {
+        queue.push(node.l);
+      }
+      if (node.r != null) {
+        queue.push(node.r);
+      }
+    }
+    
+    return { leafNodes: leafNodes, totalNodes: totalNodes };
   }
   
 }
