@@ -68,6 +68,14 @@ to
 
 ```
 
+**Metrics**
+> metrics()
+
+Will return a JSON object with the following information:
+```
+{ leafNodes: 0, totalNodes: 0, }
+```
+
 ## How A Tree Is Represented
 
 A tree is represented in standard JSON object notation.  It uses the following structure to represent it's nodes:
